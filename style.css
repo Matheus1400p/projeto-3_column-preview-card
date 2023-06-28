@@ -1,0 +1,98 @@
+body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+#container {
+    display: flex;
+    margin: auto;
+    border-radius: 10px;
+}
+
+#wrapper {
+    font-family: 'Lexend Deca';
+    height: 400px;
+    max-width: 210px;
+    padding: 3em;
+}
+
+#wrapper h1 {
+    font-family: 'Big Shoulders Display', sans-serif;
+    text-transform: uppercase;
+    color:hsl(0, 0%, 95%);
+    font-size: 40px;
+}
+
+#wrapper p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    margin-bottom: 100px;
+}
+
+#wrapper button {
+    text-decoration: none;
+    background-color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    cursor: pointer;
+    border-radius: 70px;
+    font-size: 15px;
+    font-weight: 400;
+    width: 120px;
+    height: 40px;
+}
+
+.sedan button {
+    color: hsl(31, 77%, 52%);
+}
+
+.suvs button {
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury button {
+    color: hsl(179, 100%, 13%);
+}
+
+#wrapper button:hover {
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+}
+
+#wrapper.sedan {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0px 0px 10px;
+}
+
+#wrapper.suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+#wrapper.luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0px 10px 10px 0px;
+}
+
+@media screen and (max-width: 425px) {
+    
+    #container {
+        flex-direction: column;
+    }
+
+    #wrapper {
+        height: 300px;
+    }
+
+    #wrapper p {
+        margin-bottom: 20px;
+    }
+
+    #wrapper.sedan {
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    #wrapper.luxury {
+        border-radius: 0px 0px 10px 10px;
+    }
+
+}
